@@ -1,0 +1,427 @@
+@font-face{
+    font-family: "GODOFWAR";
+    src: url("../font/GODOFWAR.TTF");
+}
+@font-face{
+    font-family: "Chilanka";
+    src: url("../font/Chilanka-Regular.ttf");
+}
+@font-face{
+    font-family: "Bubbler";
+    src: url("../font/BubblerOne-Regular.ttf");
+}
+@font-face{
+    font-family: "Caslon";
+    src: url("../font/LibreCaslonCondensed-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Caslon", Georgia, serif;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: #f3ece2;
+    background-color: #0b0909;
+}
+
+/* ---------- Menu ---------- */
+.barraLn{
+    background-color: rgba(11, 9, 9, 0.8);
+    border-bottom: 2px solid #a4161a;
+    backdrop-filter: blur(6px); /* Filtro borroso menu */
+}
+
+.logotipo{
+    width: 70px;
+}
+
+.barraLn .navbar-brand{ /* Titulo */
+    align-items: center;
+    font-family: "GODOFWAR", Impact, fantasy;
+    font-size: 1.5rem;
+    color: #f3ece2;
+}
+
+.barraLn .nav-link{ /* Secciones menu */
+    font-family: "Chilanka", "Comic Sans MS", cursive;
+    font-size: 1.1rem;
+    color: #f3ece2;
+    border-bottom: 2px solid transparent;
+}
+
+.barraLn .nav-link:hover,
+.barraLn .nav-link.active{
+    color: #d4a94f;
+    border-bottom-color: #e5383b;
+}
+
+.portada{
+    padding: 10vh 1rem;
+    text-align: center;
+}
+/* ---------- General ---------- */
+#tituloP{
+    font-family: "GODOFWAR", Impact, fantasy;
+    font-size: clamp(3rem, 7vw, 4rem);
+    color: #f3ece2;
+    text-shadow: 3px 3px 0 #a4161a;
+}
+
+.ofrezco{
+    font-family: "Chilanka", "Comic Sans MS", cursive;
+    font-size: 1.4rem;
+    color: #d4a94f;
+    margin-top: 0.8rem;
+}
+
+.barraDeg{
+    width: 100%;
+    max-width: 500px;
+    height: 4px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, transparent, #a4161a, #d4a94f, #a4161a, transparent);
+    border: 0;
+}
+
+.contenedor{
+    padding: 7rem;
+    background-color: rgba(11, 9, 9, 0.62);
+    border: 1px solid rgba(212, 169, 79, 0.25);
+}
+
+.titi2{
+    font-family: "GODOFWAR", Impact, fantasy;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #f3ece2;
+    text-shadow: 2px 2px 0 #a4161a;
+    margin-bottom: 0.4rem;
+}
+
+.subtiti2{
+    font-family: "Chilanka", "Comic Sans MS", cursive;
+    text-align: center;
+    color: #d4a94f;
+    margin-bottom: 2.5rem;
+}
+
+p{
+    text-align: justify;
+}
+
+#img{
+    width: 100%;
+    border-radius: 14px;
+}
+
+figcaption{
+    font-size: 1.1rem;
+    padding: 1.4rem;
+    border-left: 4px solid #a4161a;
+    border-radius: 14px;
+    text-align: justify;
+}
+
+figcaption::first-letter{
+    font-family: "GODOFWAR", Impact, fantasy;
+    font-size: 2.8rem;
+    float: left;
+    line-height: 1;
+    margin: 0.2rem 0.4rem 0 0;
+    color: #e5383b;
+}
+
+.fila{
+    margin-top: 2.5rem;
+}
+
+.marco{
+    height: 100%;
+    border: 1px solid rgba(212, 169, 79, 0.45);
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.marco:hover{
+    transform: translateY(-6px);
+    border-color: #a4161a;
+    box-shadow: 0 12px 28px rgba(164, 22, 26, 0.45);
+}
+
+.marco h3{
+    font-family: "GODOFWAR", Impact, fantasy;
+    font-size: 1.2rem;
+    margin: 0.3rem 0 0.4rem;
+    color: #d4a94f;
+}
+
+.pae{
+    font-size: 1rem;
+}
+
+/* ---------- Sobre mi ---------- */
+.imgYo{
+    width: 85%;
+    border-radius: 14px;
+}
+
+.acordeon{
+    --bs-accordion-bg: #0b0909;
+    --bs-accordion-color: #f3ece2;
+    --bs-accordion-border-color: rgba(212, 169, 79, 0.45);
+    --bs-accordion-btn-bg: #1a1414;
+    --bs-accordion-btn-color: #f3ece2;
+    --bs-accordion-active-bg: #a4161a;
+    --bs-accordion-active-color: #f3ece2;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.2rem rgba(212, 169, 79, 0.5);
+    --bs-accordion-border-radius: 14px;
+    --bs-accordion-inner-border-radius: 14px;
+}
+
+.acordeon .accordion-button{
+    font-family: "Chilanka", "Comic Sans MS", cursive;
+    font-size: 1.1rem;
+}
+
+.acordeon .accordion-body{
+    font-size: 1rem;
+}
+
+.acordeon ul{
+    padding-left: 1.2rem;
+}
+
+/* ---------- Proyectos ---------- */
+.proyecto{
+    height: 100%;
+    background-color: #0b0909;
+    color: #f3ece2;
+    border: 1px solid rgba(212, 169, 79, 0.45);
+    border-radius: 14px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Tiempo de transición de tarjeta */
+}
+
+.proyecto:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(164, 22, 26, 0.5);
+}
+
+.proyecto img{
+    height: 190px;
+    border-bottom: 3px solid #a4161a;
+}
+
+.proyecto .card-title{
+    font-family: "GODOFWAR", Impact, fantasy;
+    font-size: 1.2rem;
+    color: #f3ece2;
+}
+
+.proyecto .card-text{
+    font-size: 1.05rem;
+}
+
+.etiquetas{
+    margin-bottom: 0.9rem;
+}
+
+.etiqueta{
+    font-family: "Bubbler", "Trebuchet MS", sans-serif;
+    font-size: 0.9rem;
+    padding: 0.3rem 1rem;
+    border: 1px solid #d4a94f;
+    border-radius: 50px;
+    color: #d4a94f;
+}
+
+/* ---------- Diseño botones ---------- */
+.boton{
+    font-family: "Chilanka", "Comic Sans MS", cursive;
+    font-size: 1.05rem;
+    color: #f3ece2;
+    background-color: #a4161a;
+    border: 2px solid #a4161a;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+}
+
+.boton:hover,
+.boton:focus-visible{ /* Enfoque de botón */
+    background-color: transparent;
+    color: #d4a94f;
+    border-color: #d4a94f;
+    transform: translateY(-2px);
+}
+
+.botonTrans{
+    background-color: transparent;
+    border-color: #d4a94f;
+    color: #d4a94f;
+}
+
+.botonTrans:hover{
+    background-color: #d4a94f;
+    color: #0b0909;
+    border-color: #d4a94f;
+}
+
+/* ---------- Galería ---------- */
+#carrusel{
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid rgba(212, 169, 79, 0.45);
+    border-radius: 14px;
+}
+
+#carrusel .carousel-item img{
+    height: clamp(100px, 40vw, 450px);
+    border-radius: 14px;
+}
+
+#carrusel .carousel-caption{
+    background-color: rgba(11, 9, 9, 0.7);
+    border-radius: 10px;
+    padding: 0.4rem 0.8rem;
+    bottom: 1.6rem;
+}
+
+#carrusel .carousel-caption h3{
+    font-family: "GODOFWAR", Impact, fantasy;
+    font-size: 1.15rem;
+}
+
+#carrusel .carousel-caption p{
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* ---------- Multimedia ---------- */
+.medio{
+    height: 100%;
+    border: 1px solid rgba(212, 169, 79, 0.45);
+    border-radius: 14px;
+    padding: 1.2rem;
+}
+
+.medio h3{
+    font-family: "GODOFWAR", Impact, fantasy;
+    font-size: 1.5rem;
+    color: #d4a94f;
+    margin-bottom: 0.8rem;
+}
+
+.medio video,
+.medio audio{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.medio video{
+    background-color: #000;
+}
+
+.medio p{
+    margin-top: 0.8rem;
+    padding: 0;
+}
+
+/* ---------- Página Contacto ---------- */
+.panel{
+    height: 100%;
+    border:1px solid rgba(212, 169, 79, 0.45);
+    border-radius: 14px;
+    padding: 1.6rem;
+}
+
+.panel h2{
+    font-family: "GODOFWAR", Impact, fantasy;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 0 #a4161a;
+}
+
+.label{
+    font-family: "Chilanka", "Comic Sans MS", cursive;
+    color: #d4a94f;
+    margin-bottom: 0.25rem;
+}
+
+.campo{
+    font-family: "Caslon", Georgia, serif;
+    font-size: 1.05rem;
+    color: #f3ece2;
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(243, 236, 226, 0.35);
+    border-radius: 10px;
+    padding: 0.65rem 0.9rem;
+}
+
+.campo::placeholder{ /* Texto de campo */
+    color: rgba(243, 236, 226, 0.55);
+}
+
+.campo:focus{ /* Marco de campo */
+    color: #f3ece2;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: #d4a94f;
+    box-shadow: 0 0 0 0.2rem rgba(212, 169, 79, 0.35);
+}
+
+.mapa iframe {
+    width: 100%;
+    min-height: 300px;
+    border-radius: 12px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.redes img{
+    height: 80px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.redes a:hover img{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(164, 22, 26, 0.5);
+}
+
+/* ---------- Footer ---------- */
+footer{
+    border-top: 3px solid #a4161a;
+    padding: 2rem 0 1.2rem;
+    text-align: center;
+}
+
+.conexiones{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 0.8rem;
+    font-family: "Chilanka", "Comic Sans MS", cursive;
+    font-size: 1.05rem;
+}
+
+#derechos{
+    font-family: "Bubbler", "Trebuchet MS", sans-serif;
+    font-size: 1rem;
+    color: rgba(243, 236, 226, 0.8);
+}
+
+
+

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sánchez Cuellar Jesús Antonio (Yo)">
+    <meta name="description" content="Portafolio personal.">
+    <meta name="keywords" content="portafolio, desarrollo web, HTML, CSS, Bootstrap">
+
+    <title>Portafolio JASC</title>
+    <link rel="icon" href="iconos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=call,code,electric_bolt,location_on,mail,person,school,send,sports_esports">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-dark barraLn fixed-top" aria-label="Navegación principal">
+        <div class="container">
+
+            <a class="navbar-brand" href="#inicio">
+                <img src="image/Imagotipo.png" alt="Logo" class="logotipo">
+                Portafolio Web
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Mostrar u ocultar el menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                    <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                    <a class="nav-link" href="#galeria">Galería</a>
+                    <a class="nav-link" href="#multimedia">Multimedia</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="contenedor align-items-center">
+        <div class="portada">
+            <h1 id="tituloP">Mi Portafolio</h1>
+            <p class="ofrezco text-center">Desarrollo web · App Móviles · Base de Datos · Diseño/Front-End</p>
+            <hr class="barraDeg">
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="contenedor">
+        <div class="container">
+            <h2 class="titi2">Sobre mi</h2>
+            <p class="subtiti2 text-center">Quién soy y qué estoy aprendiendo</p>
+
+            <div class="row g-4 align-items-start">
+                <section class="col-md-6 col-lg-5">
+                    <figure>
+                        <img src="image/yo.jpeg" alt="Yo" class="imgYo img-fluid">
+                    </figure>
+                </section>
+
+                <div class="col-lg-7">
+                    <article>
+                        <p>Soy una persona con interés en el desarrollo de software y en la creación de soluciones tecnológicas que resuelvan problemas reales</p>
+                    </article>
+
+                    <div class="accordion acordeon mt-4" id="acordeonPerfil">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#perfilFormacion" aria-expanded="true" aria-controls="perfilFormacion">
+                                    Datos Generales
+                                </button>
+                            </h3>
+                            <div id="perfilFormacion" class="accordion-collapse collapse show" data-bs-parent="#acordeonPerfil">
+                                <div class="accordion-body">
+                                     <ul>
+                                        <li>Nombre: Jesús Antonio Sánchez Cuellar</li>
+                                        <li>Perfil Académico: Licenciatura en Desarrollo de Software Multiplataforma</li>
+                                        <li>Correo: elcrackfernan2442@gmail.com</li>
+                                        <li>Estado: Sólido</li>
+                                        <li>Estudiambre desempleado</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilHabilidades" aria-expanded="false" aria-controls="perfilHabilidades">
+                                    Aptitudes
+                                </button>
+                            </h3>
+                            <div id="perfilHabilidades" class="accordion-collapse collapse" data-bs-parent="#acordeonPerfil">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Colaborativo</li>
+                                        <li>Analítico</li>
+                                        <li>Creativo</li>
+                                        <li>Disciplinado</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#perfilIntereses" aria-expanded="false" aria-controls="perfilIntereses">
+                                    Intereses y hobbies
+                                </button>
+                            </h3>
+                            <div id="perfilIntereses" class="accordion-collapse collapse"
+                                data-bs-parent="#acordeonPerfil">
+                                <div class="accordion-body">
+                                    Videojuegos como God of War, me gusta el dubstep y el huevito con jamón.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="contenedor">
+        <div class="container">
+            <h2 class="titi2">Lo que ofrezco</h2>
+            <p class="subtiti2 text-center">Habilidades y Conocimientos</p>
+
+            <div class="row g-4 align-items-center">
+                <figure class="col-lg-6">
+                    <img src="image/dibujoP.jpeg" alt="Imagen de God of War (2005)" id="img" class="img-fluid">
+                </figure>
+                <div class="col-lg-6">
+                    <figcaption>
+                        Soy estudiante de Desarrollo de Software Multiplataforma, interesado en seguir desarrollándome profesionalmente dentro del área de tecnología. Me considero una persona compormetida y adaptativa a los cambios, con interés por aprender y aplicar mis conocimientos en proyectos reales. He trabajado en proyectos académicos relacionados con desarrollo web y móvil, bases de datos, análisis de requerimientos, diseño de interfaces y prototipos. Mi formación incluye conocimientos de análisis técnico de software y certificación CCNA en redes. Me interesa participar en proyectos donde pueda aportar mis conocimientos, adquirir experiencia y continuar creciendo como desarrollador de software.
+                    </figcaption>
+                </div>
+            </div>
+
+            <div class="row g-4 fila">
+                <article class="col-md-4">
+                    <div class="marco">
+                        <h3>Desarrollo de software</h3>
+                        <p class="pae">Conocimientos en programación utilizando C, Java y Kotlin, además de desarrollo de aplicaciones y resolución de problemas mediante estructuras y lógica de programación. También cuento con experiencia trabajando con bases de datos y SQL, así como con herramientas de desarrollo como IntelliJ IDEA y Android Studio.</p>
+                    </div>
+                </article>
+                <article class="col-md-4">
+                    <div class="marco">
+                        <h3>Diseno y desarrollo de interfaces</h3>
+                        <p class="pae">Manejo de Figma para la creación de prototipos, maquetados y diseño de interfaces. Tengo conocimientos sobre HTML y CSS, diseño responsivo y adaptación de interfaces para diferentes tamaños de pantalla, buscando que las aplicaciones sean funcionales y fáciles de utilizar.</p>
+                    </div>
+                </article>
+                <article class="col-md-4">
+                    <div class="marco">
+                        <h3>Analisis y redes</h3>
+                        <p class="pae">Cuento con conocimientos en análisis técnico de software, identificación de requerimientos y planificación de soluciones. Además, tengo formación y certificación en redes CCNA, lo que me permite comprender conceptos relacionados con redes, comunicación entre dispositivos y fundamentos de infraestructura.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="contenedor">
+        <div class="container">
+            <h2 class="titi2">Mis proyectos</h2>
+            <p class="subtiti2 text-center">Evidencias de los ejercicios realizados</p>
+
+            <section class="row g-4">
+                <article class="col-md-6 col-lg-4">
+                    <div class="card proyecto">
+                        <img src="image/tendencias.png" class="card-img-top" alt="tendencias">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Tendencias de Diseño Web</h3>
+                            <div class="etiquetas">
+                                <span class="etiqueta">HTML</span>
+                                <span class="etiqueta">CSS</span>
+                            </div>
+                            <p class="card-text">Sitio sobre tendencias de diseño web: claymorfismo, glassmorfismo, tabla de horarios, formulario, mapa y multimedia.</p>
+                            <button type="button" class="btn boton mt-auto align-self-start" data-bs-toggle="modal"
+                                data-bs-target="#proyecto1">Ver detalles</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-6 col-lg-4">
+                    <div class="card proyecto">
+                        <img src="image/bowen.png" class="card-img-top" alt="bowen">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Sitio Bowen</h3>
+                            <div class="etiquetas">
+                                <span class="etiqueta">HTML</span>
+                                <span class="etiqueta">Bootstrap</span>
+                                <span class="etiqueta">CSS</span>
+                            </div>
+                            <p class="card-text">Sitio responsivo con navbar, cards, ventanas modales, carousel y mapa
+                                de ubicación.</p>
+                            <button type="button" class="btn boton mt-auto align-self-start" data-bs-toggle="modal"
+                                data-bs-target="#proyecto2">Ver detalles</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-6 col-lg-4">
+                    <div class="card proyecto">
+                        <img src="image/GOW.png" class="card-img-top" alt="gowsito">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Pagina Personal GOW</h3>
+                            <div class="etiquetas">
+                                <span class="etiqueta">HTML</span>
+                                <span class="etiqueta">Fuentes</span>
+                                <span class="etiqueta">Iconos</span>
+                            </div>
+                            <p class="card-text">Página web sencilla que incluye: tipografía personalizada, iconos y diseño temático.</p>
+                            <button type="button" class="btn boton mt-auto align-self-start" data-bs-toggle="modal"
+                                data-bs-target="#proyecto3">Ver detalles</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </section>
+
+    <section id="galeria" class="contenedor">
+        <div class="container">
+            <h2 class="titi2">Galeria de evidencias</h2>
+            <p class="subtiti2 text-center">Reemplaza estas imágenes con capturas de tus proyectos</p>
+
+            <div id="carrusel" class="carousel slide" data-bs-ride="carousel" aria-label="Galería de evidencias">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Imagen 1"></button>
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1"
+                        aria-label="Imagen 2"></button>
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2"
+                        aria-label="Imagen 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/ED.png" class="d-block w-100"
+                            alt="Estructura de Datos">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Estructura de Datos</h3>
+                            <p class="text-center">Ejemplo de listado circular doble en Java para la gestión de alumnos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/androidS.png" class="d-block w-100" alt="Android Studio">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Android Studio</h3>
+                            <p class="text-center">Proyecto de Android Studio que calcula el total de una compra.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/BD.png" class="d-block w-100" alt="Base de Datos">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Base de Datos MySQL</h3>
+                            <p class="text-center">Creación de base de datos.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="multimedia" class="contenedor">
+        <div class="container">
+            <h2 class="titi2">Multimedia</h2>
+            <p class="subtiti2 text-center">Video de muestra y música que me acompaña al programar</p>
+
+            <div class="row g-4">
+                <article class="col-lg-7">
+                    <div class="medio">
+                        <h3>Prototipo</h3>
+                        <video controls preload="metadata">
+                            <source src="media/prototipo-figma.mp4" type="video/mp4">
+                            Tu navegador no admite la reproducción de video.
+                        </video>
+                        <p>Trabajo colaborativo sobre un prototipo de aplicación orientado a la Gestión de Residuos Electrónicos</p>
+                    </div>
+                </article>
+                <article class="col-lg-5">
+                    <div class="medio">
+                        <h3>Audio</h3>
+                        <audio controls preload="none">
+                            <source src="media/skrillex theme.mpeg" type="audio/mpeg">
+                            Tu navegador no admite la reproducción de audio.
+                        </audio>
+                        <p>ID.- Skrillex - Kyoto (Virtual Riot Remix)</p>
+                        <p>Un poco de mis gustos musicales</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="conexiones">
+                <a href="contacto.html">Mis redes</a>
+                <a href="#inicio">Volver inicio</a>
+            </div>
+            <span id="derechos">Copyright© 2026 Sánchez Cuellar Jesús Antonio</span>
+        </div>
+    </footer>
+
+
+
+    <!-- Modal  P1-->
+    <div class="modal fade" id="proyecto1" tabindex="-1" aria-labelledby="titulo-proyecto1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 fw-bold" id="titulo-proyecto1">Tendencias de Diseño Web</h2>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Página sobre tendencias de diseño web. Incluye claymorfismo, glassmorfismo, una tabla de horarios, un formulario, un mapa incrustado y contenido multimedia (video y audio).</p>
+                    <p>Tecnologías: HTML, CSS.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/SYWooli/AW-LDSM407/commit/dd5e11c49da9dd6db5c0f3c82de13bb1435a31fd" class="btn boton botonTrans">Ir al Proyecto</a>
+                    <button type="button" class="btn boton" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal  P2-->
+    <div class="modal fade" id="proyecto2" tabindex="-1" aria-labelledby="titulo-proyecto2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 fw-bold" id="titulo-proyecto2">Sitio Bowen</h2>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Sitio construido con Bootstrap: barra de navegación, tarjetas de proyectos, ventanas modales, carrusel y responsividad.</p>
+                    <p>Tecnologías: HTML, CSS, Bootstrap.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/SYWooli/AW-LDSM407/commit/bb65a735bff60b903e0a4d4e72885871ba24e900" class="btn boton botonTrans">Ir al Proyecto</a>
+                    <button type="button" class="btn boton" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal  P3-->
+    <div class="modal fade" id="proyecto3" tabindex="-1" aria-labelledby="titulo-proyecto3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5 fw-bold" id="titulo-proyecto3">Página Personal GOW</h2>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Una página temática sobre God of War con tipografía personalizada, iconos y tarjetas con la información del juego.</p>
+                    <p>Tecnologías: HTML, CSS, fuentes locales, iconos.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/SYWooli/AW-LDSM407/tree/main/07_EjercicioWeb" class="btn boton botonTrans">Ir al Proyecto</a>
+                    <button type="button" class="btn boton" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

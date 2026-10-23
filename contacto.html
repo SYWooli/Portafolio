@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sánchez Cuellar Jesús Antonio (Yo)">
+    <meta name="description" content="Portafolio personal.">
+    <meta name="keywords" content="portafolio, desarrollo web, HTML, CSS, Bootstrap">
+
+    <title>Contáctame</title>
+    <link rel="icon" href="iconos/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=call,code,electric_bolt,location_on,mail,person,school,send,sports_esports">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-dark barraLn fixed-top" aria-label="Navegación principal">
+        <div class="container">
+
+            <a class="navbar-brand" href="#inicio">
+                <img src="image/Imagotipo.png" alt="Logo" class="logotipo">
+                Portafolio Web OS
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Mostrar u ocultar el menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html#inicio">Inicio</a>
+                    <a class="nav-link" href="index.html#pasion">Habilidades</a>
+                    <a class="nav-link" href="index.html#sobre-mi">Sobre mí</a>
+                    <a class="nav-link" href="index.html#proyectos">Proyectos</a>
+                    <a class="nav-link" href="index.html#galeria">Galería</a>
+                    <a class="nav-link" href="index.html#multimedia">Multimedia</a>
+                    <a class="nav-link active" href="#contacto" aria-current="page">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="contacto" class="contenedor">
+
+        <section class="portada">
+            <h1 id="tituloP">Contacto</h1>
+            <p class="ofrezco text-center">Escríbeme y encuentra mi ubicación</p>
+            <hr class="barraDeg">
+        </section>
+        
+        <div class="container">
+            <div class="row g-4">
+
+                <article class="col-lg-12">
+                    <div class="panel align-items-center">
+                        <h2 class="text-center">Redes</h2>
+
+                        <section class="redes flex-wrap">
+                            <a  href="https://www.facebook.com/share/18URSuaEoC/">
+                                <img src="image/facebook.png" alt="Feisbuk" id="img">
+                            </a>
+                            <a href="https://www.instagram.com/sy_wooliwebon?cplk=MWhndXFveWoxeTk4Zg==">
+                                <img src="image/Instagram-Logo-PNG.png" alt="Insta" id="img">
+                            </a>
+                            <a href="https://www.tiktok.com/@wooliwebon?_r=1&_t=ZS-9Al7sXEOmwx">
+                                <img src="image/TikTok-logo-2.png" alt="Tikitoki" id="img">
+                            </a>
+                            <a href="https://github.com/SYWooli">
+                                <img src="image/GitHub.png" alt="Github" id="img">
+                            </a>
+                        </section>
+
+                    </div>
+                </article>
+
+                <article class="col-lg-12">
+                    <div class="panel">
+                        <h2>Envíame un mensaje</h2>
+
+                        <form action="">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nombre" class="form-label label">Nombre</label>
+                                    <input type="text" class="form-control campo" required placeholder="Ej. José José">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="apellidos" class="form-label label">Apellidos</label>
+                                    <input type="text" class="form-control campo" required placeholder="Ej. Ramírez Ramírez">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="correo" class="form-label label">Correo electrónico</label>
+                                    <input type="email" class="form-control campo" required placeholder="usuario@gmail.com">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telefono" class="form-label label">Teléfono contacto (opcional)</label>
+                                    <input type="tel" class="form-control campo" placeholder="10 dígitos">
+                                </div>
+                                <div class="col-12">
+                                    <label for="asunto" class="form-label label">Asunto</label>
+                                    <select class="form-select campo" required>
+                                        <option class="bg-secondary" value="">Selecciona una opción</option>
+                                        <option class="bg-secondary">Proyecto o colaboración</option>
+                                        <option class="bg-secondary">Comentarios sobre mi portafolio</option>
+                                        <option class="bg-secondary">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensaje" class="form-label label">Mensaje</label>
+                                    <input class="form-control campo" rows="3" required placeholder="Escribe aquí tu mensaje..."></input>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" required>
+                                        <label class="form-check-label">Acepto que mis datos se usen solo para responder este mensaje.</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex flex-wrap gap-3">
+                                    <button type="submit" class="btn boton" aria-hidden="true">Enviar</button>
+                                    <button type="reset" class="btn boton boton-claro">Limpiar</button>
+                                </div>
+                            </div>
+                        </form>
+                
+                    </div>
+                </article>
+
+                <article class="col-lg-12">
+                    <div class="panel h-100">
+                        <h2>Mi cerro</h2>
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20339.35745452465!2d-99.69745538934737!3d19.55793939200559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d26f126abf0651%3A0xcfdf15ab7db3f743!2sSantuario%20Del%20Se%C3%B1or%20Del%20Cerrito!5e0!3m2!1ses-419!2smx!4v1792659737485!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="conexiones">
+                <a href="index.html">Inicio</a>
+                <a href="#contacto">Volver arriba</a>
+            </div>
+            <span id="derechos">Copyright© 2026 Sánchez Cuellar Jesús Antonio</span>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
